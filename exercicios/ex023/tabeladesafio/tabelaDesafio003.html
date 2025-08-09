@@ -6,40 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        body{
-          font-family: Arial, Helvetica, sans-serif;  
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
-            width: 300px;
-            height: 100px;
+            width: 800px;
             border-collapse: collapse;
         }
-        
-        tr, th{
-            border: 1px solid black;
-            font-size: 25px;
-            padding: 10px;
 
+        tr, th, td {
+            border: 2px solid black;
+            font-size: 25px;
+            padding: 10px;   
         }
-    </style>
+
+        .titulo{
+            background-color: gray;
+            color: white;
+            font-weight: 400;
+        }
+
+        .centro{
+            text-align:center;
+        }
+
+
+        </style>
     <title>Tabela Desafio 003</title>
 </head>
 
 <body>
     <h1>Desafio Tabela 003</h1>
-    
+
     <table>
+        
         <thead>
-            <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
+            <tr class="titulo">
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+
+                <th colspan="2">Notas</th>
+                <th rowspan="2"> Média </th>
+            <tr class="titulo">
+                <th> Nota 1 </th>
+                <th> Nota 2 </th>
             </tr>
-            <tr>
+
             </tr>
+
         </thead>
 
         <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="centro">2</td>
+                <td class="centro">8</td>
+                <td class="centro">9</td>
+            </tr>
+
+            <tr>
+                <td>Física</td>
+                <td class="centro">20</td>
+                <td class="centro">10</td>
+                <td class="centro">10</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td class="centro">10</td>
+                <td class="centro">4</td>
+                <td class="centro">7</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td class="centro">5</td>
+                <td class="centro">9</td>
+                <td class="centro">10</td>
+            </tr>
+
+            <tr class="titulo">
+                <td colspan="4"><strong>Média de Exatas</strong></td>
+                <td class="centro">20</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="centro">10</td>
+                <td class="centro">8</td>
+                <td class="centro">10</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td class="centro">9</td>
+                <td class="centro">2</td>
+                <td class="centro">2</td>
+            </tr>
+
+            <tr class="titulo">
+                <td colspan="4"><strong>Média de Humanas</strong></td>
+                <td class="centro">9</td>
+            </tr>
+
 
         </tbody>
     </table>
